@@ -1,22 +1,26 @@
 
 
 
-#<step explain="This step should include all functions without function code"
+#<step explain="Now we see the full code, with added x returns"
 function TestFunction()
-    #<step explain="This step should include function code 1"
     x = 1
-    #</step>
+    return x
 end
 
 function TestFunction2()
-    #<step explain="This step should include function code 2"
     x = 2
-    #</step>
+    return x
 end
 
 function TestFunction3()
-    #<step explain="This step should include function code 3"
     x = 3
-    #</step>
+    return x
 end
+#</step>
+
+#<step explain="Here is some arithmetic, with the code"
+
+summedFunctions = TestFunction() + TestFunction2() + TestFunction3()
+println(summedFunctions)
+
 #</step>
